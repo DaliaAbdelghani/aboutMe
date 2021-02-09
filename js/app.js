@@ -2,7 +2,7 @@
 
 let userName = prompt('Hello, What is your name?');
 console.log(userName);
-alert("welcome, Lets guess more information about me !");
+alert("welcome " +userName+ ". Lets guess more information about me !");
 
 let color = confirm("My favourite color is red?: Y/N ")
 console.log(color);
