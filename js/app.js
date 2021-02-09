@@ -4,47 +4,47 @@ let userName = prompt('Hello, What is your name?');
 console.log(userName);
 alert("welcome " +userName+ ". Lets guess more information about me !");
 
-let color = confirm("My favourite color is red?: Y/N ")
+let color = prompt ("My favourite color is red?: Y/N ")
 console.log(color);
 
-if (color === true) {
+if ( (color.toLocaleLowerCase() === 'y') || (color.toLocaleLowerCase() === 'yes') ) {
     alert(" No. Red is a nice color but I like purple more")
 } else {
     alert(" Correct. Red is a nice color but I like purple more");
 }
 
 
-let hobby = confirm("My hobby is walking?: Y/N ");
+let hobby = prompt ("My hobby is walking?: Y/N ");
 console.log(hobby);
 
-if (hobby === true) {
+if ( (hobby.toLocaleLowerCase() === 'y') || (hobby.toLocaleLowerCase() === 'yes') ) {
     alert(" Correct. Walking is an excellent sport for body and mind");
 } else {
     alert(" No. I like walking, it is an excellent sport for body and mind");
 }
 
-let country = confirm("I'm from Jordan?: Y/N ");
+let country = prompt ("I'm from Jordan?: Y/N ");
 console.log(country);
 
-if (country === true) {
+if ( (country.toLocaleLowerCase() === 'y') || (country.toLocaleLowerCase() === 'yes') ) {
     alert(" Correct. I'm from Jordan");
 } else {
     alert(" No. I'm from Jordan");
 }
 
-let music = confirm("I like music?: Y/N ")
+let music = prompt ("I like music?: Y/N ")
 console.log(music);
 
-if (music === true) {
+if ( (music.toLocaleLowerCase() === 'y') || (music.toLocaleLowerCase() === 'yes') ) {
     alert(" Correct. Sometimes I like to listen to music");
 } else {
     alert(" No.Sometimes I like to listen to music");
 }
 
-let sweets = confirm("I like sweets?: Y/N ")
+let sweets = prompt ("I like sweets?: Y/N ")
 console.log(sweets);
 
-if (sweets === true) {
+if ( (sweets.toLocaleLowerCase() === 'y') || (sweets.toLocaleLowerCase() === 'yes')) {
     alert(" No. Sweets are sweet ! but a little is enough.");
 } else {
     alert(" Correct. A little of sweets is enough. ");
