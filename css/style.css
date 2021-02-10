@@ -7,3 +7,5 @@ h1 {text-align:center; font-weight: bold;color:gray}
 ol {font-weight: bold;color:brown}
 
 li {font-style:italic;color:brown;}
+
+#answers {color:rgb(196, 95, 129);font-style: italic;font-weight:bold;text-align: left;}
