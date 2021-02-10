@@ -54,3 +54,48 @@ if ( (sweets.toLocaleLowerCase() === 'y') || (sweets.toLocaleLowerCase() === 'ye
 document.getElementById("inputs").innerHTML="Thanks, "+userName+".  your answers are: for color is " +color+  " , for hobby is " +hobby+ " , for country is " +country+  ", for music is " +music+ " and for sweets is "+sweets+ "."; 
 
 
+// the 6th question of lab 03
+
+let numbersList=[1,2,3,4,5];
+console.log(numbersList.length);
+console.log(numbersList);
+
+let attempts=4;
+let userInput=prompt('From 1 to 5, What is my favourite number?');
+let correct = false;
+
+while(attempts && !correct){
+    for (let i= 0;i<numbersList.length;i++){
+    if (userInput === '1' ){
+      alert('correct answer!');
+      correct=true;
+      break;
+    }
+    attempts-=1;
+    userInput=prompt('please try again you have : '+attempts+' remaining!');
+    }
+    if (correct){
+    break;
+    }
+}
+
+// the 7th question of lab 03
+let days=['saturday', 'sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday'];
+let newAttempts=6;
+while(newAttempts){
+  let newGuess = prompt('Can you guess my favourite day of the week ! you have ' + newAttempts + ' attempts!').toLowerCase();
+  if (newGuess=== 'friday'){
+    alert('Correct answer! \'' + newGuess + '\' is my day');
+    
+    break;
+  } else{
+    newAttempts-=1;
+    alert('Wrong answer... you have ' + newAttempts + ' attempts left!');
+    if(!newAttempts){
+      alert('The correct answer is ' + friday + '!');
+      break;
+    }
+  }
+}
+
+alert("Well... your score is " +newAttempts+ ". out of 6!!!");
