@@ -64,18 +64,18 @@ let attempts=4;
 let userInput=prompt('From 1 to 5, What is my favourite number?');
 let correct = false;
 
-while(attempts && !correct){
+while(attempts > 1 && !correct){
     for (let i= 0;i<numbersList.length;i++){
-    if (userInput === '1' ){
-      alert('correct answer!');
-      correct=true;
-      break;
-    }
-    attempts-=1;
-    userInput=prompt('please try again you have : '+attempts+' remaining!');
-    }
+        if (userInput === '1' ){
+           alert('correct answer!');
+           correct=true;
+           break;
+         }
+       attempts-=1;
+       userInput=prompt('please try again you have : '+attempts+' remaining!');
+       }
     if (correct){
-    break;
+       break;
     }
 }
 
