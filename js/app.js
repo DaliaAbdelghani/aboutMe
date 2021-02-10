@@ -56,17 +56,18 @@ document.getElementById("inputs").innerHTML="Thanks, "+userName+".  your answers
 
 // the 6th question of lab 03
 
-let numbersList=[1,2,3,4,5];
+let numbersList=[1,2,3,4];
 console.log(numbersList.length);
-console.log(numbersList);
+// console.log(numbersList);
+
 
 let attempts=4;
-let userInput=prompt('From 1 to 5, What is my favourite number?');
+let userInput=prompt('From 1 to 4, What is my favourite number?');
 let correct = false;
 
-while(attempts > 1 && !correct){
+while(attempts && !correct){
     for (let i= 0;i<numbersList.length;i++){
-        if (userInput === '1' ){
+        if (userInput === userInput[i]){
            alert('correct answer!');
            correct=true;
            break;
@@ -92,7 +93,7 @@ while(newAttempts){
     newAttempts-=1;
     alert('Wrong answer... you have ' + newAttempts + ' attempts left!');
     if(!newAttempts){
-      alert('The correct answer is ' + friday + '!');
+      alert('The correct answer is friday !');
       break;
     }
   }
