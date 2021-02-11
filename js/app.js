@@ -27,7 +27,7 @@ console.log(country);
 if ((country.toLocaleLowerCase() === 'y') || (country.toLocaleLowerCase() === 'yes')) {
   alert(' Correct. I am from Jordan');
 } else {
-  alert(' No. I amm from Jordan');
+  alert(' No. I am from Jordan');
 }
 
 let music = prompt('I like music?: Y/N ')
@@ -59,12 +59,13 @@ console.log(numbersList.length);
 
 
 let attempts = 4;
+numbersList[1,2,3,4]
 let userInput = prompt('From 1 to 4, What is my favourite number?');
 let correct = false;
 
 while (attempts && !correct) {
   for (let i = 0; i < numbersList.length; i++) {
-    if (userInput === userInput[i]) {
+    if (userInput === 1) {
       alert('correct answer!');
       correct = true;
       break;
@@ -137,4 +138,4 @@ function getSweets(){
 }
 getSweets(sweets);
 
-document.getElementById('answers').innerHTML = ' # Answers of the guess game show more information about me :<br>' +getColor(color)+ '<br>'+getHobby(hobby)+'<br>'+getCountry(country)+'<br>'+getMusic(music)+'<br>'+getSweets(sweets);
+document.getElementById('answers').innerHTML = ' # Answers of the guessing game show more information about me :<br>' +getColor(color)+ '<br>'+getHobby(hobby)+'<br>'+getCountry(country)+'<br>'+getMusic(music)+'<br>'+getSweets(sweets);
