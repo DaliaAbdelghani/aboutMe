@@ -97,7 +97,7 @@ function favNumber(){
       userInput = prompt ('No. too low.Guess again, you still have '+(attempts-1) +' attempts left');
       attempts--;
     }
-    else if (userInput < 10 ){
+    else if (userInput <= 10 ){
       userInput = prompt ('No but too high.Guess again, you still have '+(attempts-1) +' attempts left');
       attempts--;
     }
